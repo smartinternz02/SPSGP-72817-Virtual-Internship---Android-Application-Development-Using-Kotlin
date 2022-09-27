@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.kotlinnearby.ViewPlace">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerVertical="true">
+        <ImageView
+            android:id="@+id/photo"
+            android:src="@drawable/places_ic_search"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"/>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_margin="16dp"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/place_name"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:text="Place Name"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/place_address"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                android:text="Place Address"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/open_hour"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:text="Open Now:"/>
+
+            <RatingBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rating_bar"
+                android:max="5"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_show_map"
+                android:text="Show on Map"
+                style="@style/Widget.AppCompat.Button.Colored"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
